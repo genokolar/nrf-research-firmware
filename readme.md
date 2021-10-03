@@ -13,7 +13,7 @@ Firmware and research tools for Nordic Semiconductor nRF24LU1+ based USB dongles
 Install dependencies on Ubuntu:
 
 ```
-sudo apt-get install sdcc binutils python python-pip
+sudo apt-get install sdcc binutils python3 python3-pip
 sudo pip install -U pip
 sudo pip install -U -I pyusb
 sudo pip install -U platformio
@@ -63,7 +63,7 @@ sudo make logitech_install
 
 ## Flash a Logitech Unifying dongle back to the original firmware
 
-Download and extract the Logitech firmware image, which will be named `RQR_012_005_00028.hex` or similar. Then, run the following command to flash the Logitech firmware onto the dongle:
+[Download](https://github.com/Logitech/fw_updates) and extract the Logitech firmware image, which will be named `RQR_012_005_00028.hex` or similar. Then, run the following command to flash the Logitech firmware onto the dongle:
 
 ```
 sudo ./prog/usb-flasher/logitech-usb-restore.py [path-to-firmware.hex]
