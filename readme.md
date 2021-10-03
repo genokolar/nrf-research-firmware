@@ -68,6 +68,11 @@ sudo make logitech_install
 ```
 sudo ./prog/usb-flasher/logitech-usb-restore.py [path-to-firmware.hex]
 ```
+or
+
+```
+sudo make logitech_restore
+```
 
 ## Flash over SPI using a Teensy
 

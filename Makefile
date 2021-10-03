@@ -32,5 +32,8 @@ spi_install:
 logitech_install:
 	./prog/usb-flasher/logitech-usb-flash.py bin/dongle.formatted.bin bin/dongle.formatted.ihx
 
+logitech_restore:
+	./prog/usb-flasher/logitech-usb-restore.py firmware/RQR12.05_B0028.hex
+
 bin/:
 	mkdir -p bin
